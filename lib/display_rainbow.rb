@@ -3,7 +3,7 @@ def display_rainbow(colors)
   until x = colors.length do 
     if x == colors.length
       puts "#{colors[x][0].capitalize}: #{colors[x]}\n"
-    else
+    elsif x < colors.length
       print "#{colors[x][0].capitalize}: #{colors[x]}, "
     end
  x+=1 
